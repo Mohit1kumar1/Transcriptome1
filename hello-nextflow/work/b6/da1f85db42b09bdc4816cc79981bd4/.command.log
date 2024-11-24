@@ -1,0 +1,12 @@
+Trying to pull quay.io/biocontainers/samtools:1.19.2--h50ea8bc_1...
+Getting image source signatures
+Copying blob sha256:fb2a58868f086edb46892e7cfd8dfd66dd2041ec1a623bc18bdeae2b01671a00
+Copying blob sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d
+Copying blob sha256:ca7680d1025d7a2df2c11bc7fdcc87594a7d0c43f16f970e7b0b4bef1b266918
+Copying blob sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d
+Copying blob sha256:ca7680d1025d7a2df2c11bc7fdcc87594a7d0c43f16f970e7b0b4bef1b266918
+Copying blob sha256:fb2a58868f086edb46892e7cfd8dfd66dd2041ec1a623bc18bdeae2b01671a00
+Copying config sha256:9ca484a6c25d195243d046d2207823be22d1ff9e999efa0ff903b344a99b68ff
+Writing manifest to image destination
+Storing signatures
+Error: statfs /workspace/gitpod/hello-nextflow/data/bam: no such file or directory

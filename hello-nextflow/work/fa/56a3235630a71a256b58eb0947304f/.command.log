@@ -1,0 +1,3 @@
+Trying to pull quay.io/biocontainers/gatk4:latest...
+Error: no container with name or ID "nxf-s3d789vuytVG66LPY8bAfwUz" found: no such container
+Error: initializing source docker://quay.io/biocontainers/gatk4:latest: reading manifest latest in quay.io/biocontainers/gatk4: manifest unknown: manifest unknown

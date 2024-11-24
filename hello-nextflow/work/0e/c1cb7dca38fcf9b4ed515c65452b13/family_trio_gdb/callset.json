@@ -1,0 +1,18 @@
+{
+  "callsets": [{
+    "sample_name": "NA12877",
+    "row_idx": "0",
+    "idx_in_file": "0",
+    "stream_name": "NA12877_stream"
+  }, {
+    "sample_name": "NA12878",
+    "row_idx": "1",
+    "idx_in_file": "0",
+    "stream_name": "NA12878_stream"
+  }, {
+    "sample_name": "NA12882",
+    "row_idx": "2",
+    "idx_in_file": "0",
+    "stream_name": "NA12882_stream"
+  }]
+}

@@ -1,0 +1,32 @@
+startvalue.rds
+M_D_KF_010: 2190380
+M_D_PF_009a: 6915480
+$M_D_PF_011a: 1609960
+bowtiedict.txt.rds
+M_D_KF_010: 4
+M_D_PF_009a: 3
+M_D_PF_011a: 1
+bowtiedict.txt_chm.rds
+M_D_KF_010: 4
+M_D_PF_009a: 3
+M_D_PF_011a: 1
+star1.txt.rds
+M_D_KF_010: 310
+M_D_PF_009a: 1504
+M_D_PF_011a: 184
+star1.txt.chm.rds
+M_D_KF_010: 310
+M_D_PF_009a: 1504
+M_D_PF_011a: 184
+VG.txt.rds
+M_D_KF_010: 52
+M_D_PF_011a: 72
+M_D_PF_009a: 61
+VG.txt_chm.rds
+M_D_KF_010: 52
+M_D_PF_011a: 72
+M_D_PF_009a: 61
+sortmerna.txt.rds
+M_D_KF_010: 219038
+M_D_PF_009a: 691548
+M_D_PF_011a: 160996

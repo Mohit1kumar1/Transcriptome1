@@ -1,0 +1,3 @@
+NA12882	/homes/mkumar/practice/hello-nextflow/work/d0/d7937eb90015cc2eae663591237437/reads_son.bam.g.vcf	/homes/mkumar/practice/hello-nextflow/work/d0/d7937eb90015cc2eae663591237437/reads_son.bam.g.vcf.idx
+NA12878	/homes/mkumar/practice/hello-nextflow/work/6e/bec7dc58aa49b1cc6be65d78dc8e0b/reads_mother.bam.g.vcf	/homes/mkumar/practice/hello-nextflow/work/6e/bec7dc58aa49b1cc6be65d78dc8e0b/reads_mother.bam.g.vcf.idx
+NA12877	/homes/mkumar/practice/hello-nextflow/work/d5/620f26041802f15149565e339dbd3b/reads_father.bam.g.vcf	/homes/mkumar/practice/hello-nextflow/work/d5/620f26041802f15149565e339dbd3b/reads_father.bam.g.vcf.idx

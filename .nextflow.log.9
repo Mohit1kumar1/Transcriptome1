@@ -1,0 +1,127 @@
+Sep-10 05:37:52.331 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /homes/mkumar/practice/Operators/allcombine.nf
+Sep-10 05:37:53.182 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Sep-10 05:37:53.275 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/homes/mkumar/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Sep-10 05:37:53.321 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-10 05:37:53.327 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-10 05:37:53.337 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-10 05:37:53.384 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-10 05:37:53.456 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /homes/mkumar/practice/nextflow.config
+Sep-10 05:37:53.466 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /homes/mkumar/practice/nextflow.config
+Sep-10 05:37:53.580 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /homes/mkumar/.nextflow/secrets/store.json
+Sep-10 05:37:53.593 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4fe01803] - activable => nextflow.secret.LocalSecretsProvider@4fe01803
+Sep-10 05:37:53.616 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Sep-10 05:37:55.215 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-10 05:37:55.317 [main] DEBUG nextflow.cli.CmdRun - Launching `/homes/mkumar/practice/Operators/allcombine.nf` [extravagant_swanson] DSL2 - revision: 1d7f5e4fe2
+Sep-10 05:37:55.323 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-10 05:37:55.323 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-10 05:37:55.552 [main] DEBUG nextflow.Session - Session UUID: 32f81950-bafe-4e03-863c-cdbfc4019e34
+Sep-10 05:37:55.553 [main] DEBUG nextflow.Session - Run name: extravagant_swanson
+Sep-10 05:37:55.556 [main] DEBUG nextflow.Session - Executor pool size: 8
+Sep-10 05:37:55.585 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-10 05:37:55.603 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-10 05:37:55.686 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (09:05 CEST)
+  System: Linux 5.15.0-101-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.24+8-post-Ubuntu-1ubuntu320.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2208742@lummerland [134.176.31.195]
+  CPUs: 8 - Mem: 15.6 GB (393.5 MB) - Swap: 7.4 GB (6.5 GB)
+Sep-10 05:37:55.772 [main] DEBUG nextflow.Session - Work-dir: /homes/mkumar/practice/work [nfs]
+Sep-10 05:37:55.775 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /homes/mkumar/practice/Operators/bin
+Sep-10 05:37:55.809 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-10 05:37:55.839 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-10 05:37:55.937 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-10 05:37:56.002 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Sep-10 05:37:56.331 [main] DEBUG nextflow.Session - Session start
+Sep-10 05:37:56.681 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+Sep-10 05:37:56.697 [main] ERROR nextflow.cli.Launcher - Script compilation error
+- file : /homes/mkumar/practice/Operators/allcombine.nf
+- cause: Unexpected input: ',' @ line 28, column 88.
+   est_files/bowtiedict.txt.rds"),
+                                 ^
+
+1 error
+
+nextflow.exception.ScriptCompilationException: Script compilation error
+- file : /homes/mkumar/practice/Operators/allcombine.nf
+- cause: Unexpected input: ',' @ line 28, column 88.
+   est_files/bowtiedict.txt.rds"),
+                                 ^
+
+1 error
+
+	at nextflow.script.ScriptParser.parse0(ScriptParser.groovy:196)
+	at nextflow.script.ScriptParser.parse(ScriptParser.groovy:206)
+	at nextflow.script.ScriptRunner.parseScript(ScriptRunner.groovy:229)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:136)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script_2caaaedcd7e030d0: 28: Unexpected input: ',' @ line 28, column 88.
+   est_files/bowtiedict.txt.rds"),
+                                 ^
+
+1 error
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
+	at org.codehaus.groovy.control.ErrorCollector.addFatalError(ErrorCollector.java:148)
+	at org.apache.groovy.parser.antlr4.AstBuilder.collectSyntaxError(AstBuilder.java:4753)
+	at org.apache.groovy.parser.antlr4.AstBuilder.access$100(AstBuilder.java:169)
+	at org.apache.groovy.parser.antlr4.AstBuilder$3.syntaxError(AstBuilder.java:4764)
+	at groovyjarjarantlr4.v4.runtime.ProxyErrorListener.syntaxError(ProxyErrorListener.java:44)
+	at groovyjarjarantlr4.v4.runtime.Parser.notifyErrorListeners(Parser.java:543)
+	at groovyjarjarantlr4.v4.runtime.DefaultErrorStrategy.notifyErrorListeners(DefaultErrorStrategy.java:154)
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.reportInputMismatch(DescriptiveErrorStrategy.java:104)
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recover(DescriptiveErrorStrategy.java:55)
+	at org.apache.groovy.parser.antlr4.internal.DescriptiveErrorStrategy.recoverInline(DescriptiveErrorStrategy.java:68)
+	at groovyjarjarantlr4.v4.runtime.Parser.match(Parser.java:213)
+	at org.apache.groovy.parser.antlr4.GroovyParser.rparen(GroovyParser.java:12807)
+	at org.apache.groovy.parser.antlr4.GroovyParser.expressionInPar(GroovyParser.java:8011)
+	at org.apache.groovy.parser.antlr4.GroovyParser.parExpression(GroovyParser.java:7966)
+	at org.apache.groovy.parser.antlr4.GroovyParser.primary(GroovyParser.java:10700)
+	at org.apache.groovy.parser.antlr4.GroovyParser.pathExpression(GroovyParser.java:9866)
+	at org.apache.groovy.parser.antlr4.GroovyParser.postfixExpression(GroovyParser.java:8276)
+	at org.apache.groovy.parser.antlr4.GroovyParser.expression(GroovyParser.java:9063)
+	at org.apache.groovy.parser.antlr4.GroovyParser.expressionListElement(GroovyParser.java:8136)
+	at org.apache.groovy.parser.antlr4.GroovyParser.firstArgumentListElement(GroovyParser.java:12391)
+	at org.apache.groovy.parser.antlr4.GroovyParser.argumentList(GroovyParser.java:12273)
+	at org.apache.groovy.parser.antlr4.GroovyParser.commandExpression(GroovyParser.java:9710)
+	at org.apache.groovy.parser.antlr4.GroovyParser.statementExpression(GroovyParser.java:8235)
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:7080)
+	at org.apache.groovy.parser.antlr4.GroovyParser.blockStatement(GroovyParser.java:5677)
+	at org.apache.groovy.parser.antlr4.GroovyParser.blockStatements(GroovyParser.java:4982)
+	at org.apache.groovy.parser.antlr4.GroovyParser.blockStatementsOpt(GroovyParser.java:4932)
+	at org.apache.groovy.parser.antlr4.GroovyParser.closure(GroovyParser.java:4833)
+	at org.apache.groovy.parser.antlr4.GroovyParser.closureOrLambdaExpression(GroovyParser.java:4879)
+	at org.apache.groovy.parser.antlr4.GroovyParser.pathElement(GroovyParser.java:10119)
+	at org.apache.groovy.parser.antlr4.GroovyParser.pathExpression(GroovyParser.java:9886)
+	at org.apache.groovy.parser.antlr4.GroovyParser.postfixExpression(GroovyParser.java:8276)
+	at org.apache.groovy.parser.antlr4.GroovyParser.expression(GroovyParser.java:9063)
+	at org.apache.groovy.parser.antlr4.GroovyParser.commandExpression(GroovyParser.java:9701)
+	at org.apache.groovy.parser.antlr4.GroovyParser.statementExpression(GroovyParser.java:8235)
+	at org.apache.groovy.parser.antlr4.GroovyParser.statement(GroovyParser.java:7080)
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatement(GroovyParser.java:517)
+	at org.apache.groovy.parser.antlr4.GroovyParser.scriptStatements(GroovyParser.java:427)
+	at org.apache.groovy.parser.antlr4.GroovyParser.compilationUnit(GroovyParser.java:363)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:243)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildCST(AstBuilder.java:221)
+	at org.apache.groovy.parser.antlr4.AstBuilder.buildAST(AstBuilder.java:262)
+	at org.apache.groovy.parser.antlr4.Antlr4ParserPlugin.buildAST(Antlr4ParserPlugin.java:58)
+	at org.codehaus.groovy.control.SourceUnit.buildAST(SourceUnit.java:256)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:663)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:373)
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$2(GroovyClassLoader.java:316)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:314)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:572)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:585)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:639)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:643)
+	at nextflow.script.ScriptParser.parse0(ScriptParser.groovy:175)
+	... 6 common frames omitted

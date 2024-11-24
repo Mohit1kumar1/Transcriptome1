@@ -1,0 +1,26 @@
+Installing package into ‘/homes/mkumar/R/x86_64-pc-linux-gnu-library/3.6’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/rvest_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 115876 bytes (113 KB)
+==================================================
+downloaded 113 KB
+
+* installing *source* package ‘rvest’ ...
+** package ‘rvest’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rvest)
+
+The downloaded source packages are in
+	‘/tmp/RtmptCp0jP/downloaded_packages’

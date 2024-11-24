@@ -1,0 +1,102 @@
+Trying to pull quay.io/nf-core/gatk:4.5.0.0...
+Getting image source signatures
+Copying blob sha256:90226c0b8ca9b1c5bdfb48f0625f151e2acbffcf793aad9319f81fa795749236
+Copying blob sha256:1a799190d815f77920c9963278e0e8b1a3c2f66bf5850bc46ce6fb9da3273258
+Copying blob sha256:762ff3861584e4482f79ebaeef7c0a5b5fd2f6ce91d9190b54353b614a5e2b26
+Copying blob sha256:91e6f2d6d5602796597c6b4f77786421b207d0746b8265ead7357f543facbc02
+Copying blob sha256:cbe3537751ce03ea42788c2fbe2d5d336180dc2e20472c8cdba8b3224191d101
+Copying blob sha256:043eca7b7dd5fb53ae84f5e3e94d3bdee177fbfe702bfef8502ccf5062794939
+Copying blob sha256:cbe3537751ce03ea42788c2fbe2d5d336180dc2e20472c8cdba8b3224191d101
+Copying blob sha256:762ff3861584e4482f79ebaeef7c0a5b5fd2f6ce91d9190b54353b614a5e2b26
+Copying blob sha256:043eca7b7dd5fb53ae84f5e3e94d3bdee177fbfe702bfef8502ccf5062794939
+Copying blob sha256:1a799190d815f77920c9963278e0e8b1a3c2f66bf5850bc46ce6fb9da3273258
+Copying blob sha256:90226c0b8ca9b1c5bdfb48f0625f151e2acbffcf793aad9319f81fa795749236
+Copying blob sha256:91e6f2d6d5602796597c6b4f77786421b207d0746b8265ead7357f543facbc02
+Copying blob sha256:5bb37dfbacf38a543a3b8322ede27dc48c7abd9346a53633913c95356d1ca32e
+Copying blob sha256:5bb37dfbacf38a543a3b8322ede27dc48c7abd9346a53633913c95356d1ca32e
+Copying blob sha256:134b348e3b5e7720f8e80c492939d15d4b15338fb03cd3417a651c0d79b7f6aa
+Copying blob sha256:134b348e3b5e7720f8e80c492939d15d4b15338fb03cd3417a651c0d79b7f6aa
+Copying blob sha256:cf7105ec9c451c3c31b518f90a63fcd21e409dcf99a8c23c2e6b45fb0e3404ef
+Copying blob sha256:cf7105ec9c451c3c31b518f90a63fcd21e409dcf99a8c23c2e6b45fb0e3404ef
+Copying blob sha256:cffcd2ae2fcdfcfb2ee1886960f2a4fffdc20d4f7a53ea5cb8b107fce7f2acdd
+Copying blob sha256:cffcd2ae2fcdfcfb2ee1886960f2a4fffdc20d4f7a53ea5cb8b107fce7f2acdd
+Copying blob sha256:891945c414afb02f8aa7f1ca2688134147fdd3f8108372851fbb996c3c96d8b2
+Copying blob sha256:891945c414afb02f8aa7f1ca2688134147fdd3f8108372851fbb996c3c96d8b2
+Copying blob sha256:4f084384c353a3bf1e2d8a7c6855261feced9060e1ccfcb572243777d87b5741
+Copying blob sha256:4f084384c353a3bf1e2d8a7c6855261feced9060e1ccfcb572243777d87b5741
+Copying blob sha256:f34824c486eb930b1bf0bdd34c45fbb7d237e6c22fdaf716a65c9e9a2fc6f194
+Copying blob sha256:8744436b9dbf91ddefe776c5aa6d061fa93655ff265edc3c6cfcd2ca5398e5e0
+Copying blob sha256:f34824c486eb930b1bf0bdd34c45fbb7d237e6c22fdaf716a65c9e9a2fc6f194
+Copying blob sha256:b3625edcebc02c6a07a068a9bb09e929f281041bf1929c3fc914e22a01c7db76
+Copying blob sha256:8744436b9dbf91ddefe776c5aa6d061fa93655ff265edc3c6cfcd2ca5398e5e0
+Copying blob sha256:b3625edcebc02c6a07a068a9bb09e929f281041bf1929c3fc914e22a01c7db76
+Copying blob sha256:0258c7d63f9241bccdb6655a641406158b0a0d6cedc40219f8f8eb98d84590ba
+Copying blob sha256:e28bcb90193018e21503133c0c383ae7124a6407a607045140b41cf81f2eb850
+Copying blob sha256:a3d1f390828eebbdf0dd57dde549378ccefa065824953f433e83a7c90782f18d
+Copying blob sha256:0258c7d63f9241bccdb6655a641406158b0a0d6cedc40219f8f8eb98d84590ba
+Copying blob sha256:a3d1f390828eebbdf0dd57dde549378ccefa065824953f433e83a7c90782f18d
+Copying blob sha256:e28bcb90193018e21503133c0c383ae7124a6407a607045140b41cf81f2eb850
+Copying blob sha256:4da44515c0282c753dea8e5d620f840683b9be744fc3558aa200a3b6801d6d02
+Copying blob sha256:0ed77206bc58a5c4253dc48f63c49ae2f6a3dfef68374e35b8906e397b8b3a34
+Copying blob sha256:4da44515c0282c753dea8e5d620f840683b9be744fc3558aa200a3b6801d6d02
+Copying blob sha256:0ed77206bc58a5c4253dc48f63c49ae2f6a3dfef68374e35b8906e397b8b3a34
+Copying config sha256:a0350cd371d6d1507fc4cf617e175eb5bd4c3b204c333c94d185bf1ea0795e28
+Writing manifest to image destination
+Storing signatures
+12:17:21.128 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/gatk/gatk-package-4.5.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+12:17:24.997 INFO  HaplotypeCaller - ------------------------------------------------------------
+12:17:24.999 INFO  HaplotypeCaller - The Genome Analysis Toolkit (GATK) v4.5.0.0
+12:17:25.000 INFO  HaplotypeCaller - For support and documentation go to https://software.broadinstitute.org/gatk/
+12:17:25.000 INFO  HaplotypeCaller - Executing as root@d6ba651853b1 on Linux v5.15.0-113-generic amd64
+12:17:25.000 INFO  HaplotypeCaller - Java runtime: OpenJDK 64-Bit Server VM v17.0.9+9-Ubuntu-122.04
+12:17:25.001 INFO  HaplotypeCaller - Start Date/Time: August 9, 2024 at 12:17:21 PM GMT
+12:17:25.001 INFO  HaplotypeCaller - ------------------------------------------------------------
+12:17:25.001 INFO  HaplotypeCaller - ------------------------------------------------------------
+12:17:25.002 INFO  HaplotypeCaller - HTSJDK Version: 4.1.0
+12:17:25.002 INFO  HaplotypeCaller - Picard Version: 3.1.1
+12:17:25.002 INFO  HaplotypeCaller - Built for Spark Version: 3.5.0
+12:17:25.003 INFO  HaplotypeCaller - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+12:17:25.003 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+12:17:25.003 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+12:17:25.004 INFO  HaplotypeCaller - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+12:17:25.004 INFO  HaplotypeCaller - Deflater: IntelDeflater
+12:17:25.004 INFO  HaplotypeCaller - Inflater: IntelInflater
+12:17:25.004 INFO  HaplotypeCaller - GCS max retries/reopens: 20
+12:17:25.004 INFO  HaplotypeCaller - Requester pays: disabled
+12:17:25.005 INFO  HaplotypeCaller - Initializing engine
+12:17:25.762 INFO  IntervalArgumentCollection - Processing 20000 bp from intervals
+12:17:25.857 INFO  HaplotypeCaller - Done initializing engine
+12:17:25.991 INFO  HaplotypeCallerEngine - Tool is in reference confidence mode and the annotation, the following changes will be made to any specified annotations: 'StrandBiasBySample' will be enabled. 'ChromosomeCounts', 'FisherStrand', 'StrandOddsRatio' and 'QualByDepth' annotations have been disabled
+12:17:26.005 INFO  NativeLibraryLoader - Loading libgkl_utils.so from jar:file:/gatk/gatk-package-4.5.0.0-local.jar!/com/intel/gkl/native/libgkl_utils.so
+12:17:26.228 INFO  SmithWatermanAligner - AVX accelerated SmithWaterman implementation is not supported, falling back to the Java implementation
+12:17:26.233 INFO  HaplotypeCallerEngine - Standard Emitting and Calling confidence set to -0.0 for reference-model confidence output
+12:17:26.233 INFO  HaplotypeCallerEngine - All sites annotated with PLs forced to true for reference-model confidence output
+12:17:27.612 INFO  NativeLibraryLoader - Loading libgkl_pairhmm_omp.so from jar:file:/gatk/gatk-package-4.5.0.0-local.jar!/com/intel/gkl/native/libgkl_pairhmm_omp.so
+12:17:27.695 INFO  IntelPairHmm - Flush-to-zero (FTZ) is enabled when running PairHMM
+12:17:27.696 INFO  IntelPairHmm - Available threads: 8
+12:17:27.696 INFO  IntelPairHmm - Requested threads: 4
+12:17:27.696 INFO  PairHMM - Using the OpenMP multi-threaded AVX-accelerated native PairHMM implementation
+12:17:28.085 INFO  ProgressMeter - Starting traversal
+12:17:28.086 INFO  ProgressMeter -        Current Locus  Elapsed Minutes     Regions Processed   Regions/Minute
+12:17:32.846 WARN  InbreedingCoeff - InbreedingCoeff will not be calculated at position 20:10040772 and possibly subsequent; at least 10 samples must have called genotypes
+12:17:36.978 INFO  HaplotypeCaller - 27 read(s) filtered by: MappingQualityReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+795 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: NonZeroReferenceLengthAlignmentReadFilter 
+0 read(s) filtered by: GoodCigarReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+822 total reads filtered out of 5434 reads processed
+12:17:36.981 INFO  ProgressMeter -          20:10059766              0.1                    80            539.8
+12:17:36.982 INFO  ProgressMeter - Traversal complete. Processed 80 total regions in 0.1 minutes.
+12:17:37.066 INFO  VectorLoglessPairHMM - Time spent in setup for JNI call : 0.00654501
+12:17:37.067 INFO  PairHMM - Total compute time in PairHMM computeLogLikelihoods() : 0.146844675
+12:17:37.067 INFO  SmithWatermanAligner - Total compute time in java Smith-Waterman : 0.12 sec
+12:17:37.068 INFO  HaplotypeCaller - Shutting down engine
+[August 9, 2024 at 12:17:37 PM GMT] org.broadinstitute.hellbender.tools.walkers.haplotypecaller.HaplotypeCaller done. Elapsed time: 0.27 minutes.
+Runtime.totalMemory()=136314880
+Using GATK jar /gatk/gatk-package-4.5.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /gatk/gatk-package-4.5.0.0-local.jar HaplotypeCaller -R ref.fasta -I reads_son.bam -O reads_son.bam.g.vcf -L intervals.list -ERC GVCF

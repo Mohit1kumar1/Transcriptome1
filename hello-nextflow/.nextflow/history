@@ -1,0 +1,26 @@
+2024-08-05 23:52:02	-	tender_lamport	-	b6e260dc7ddece7378bbf4d23f4d9d01	c80150d1-ae05-4764-a5f8-1d0345192fd2	nextflow run hello-gatk.nf
+2024-08-05 23:56:01	2.6s	adoring_majorana	ERR	0b42cf4b1d49492727de0fe364ee4c57	f7187cfb-6cc0-4dfc-a703-586dfc00ed47	nextflow run hello-gatk.nf
+2024-08-05 23:57:14	2.3s	deadly_engelbart	ERR	90e6bc42abe51854bca97030693fab5a	3a470f9d-3846-4a2f-bccb-3ab81dd49f31	nextflow run hello-gatk.nf
+2024-08-06 00:01:44	2.3s	lonely_agnesi	ERR	0b42cf4b1d49492727de0fe364ee4c57	a9a873fa-c169-4b93-bfec-885b5f151d52	nextflow run hello-gatk.nf
+2024-08-06 00:03:34	2s	compassionate_hamilton	ERR	0b42cf4b1d49492727de0fe364ee4c57	c0aa2b3a-88c6-4bef-b365-7b57401a3bec	nextflow run hello-gatk.nf
+2024-08-06 00:03:57	2.1s	tender_stallman	ERR	0b42cf4b1d49492727de0fe364ee4c57	5cfa9974-2b93-4cc2-b322-8f553fa4221a	nextflow run hello-gatk.nf
+2024-08-07 00:05:13	2.9s	curious_yonath	ERR	0b42cf4b1d49492727de0fe364ee4c57	1a390443-c649-4c4b-9190-870af99ae040	nextflow run hello-gatk.nf
+2024-08-07 00:15:37	2.5s	hungry_noyce	ERR	0b42cf4b1d49492727de0fe364ee4c57	dc17c649-a2dc-4957-a21e-b2bc2e3c49a1	nextflow run hello-gatk.nf
+2024-08-08 23:36:12	4.6s	maniac_venter	ERR	6158225507ff8c0f0f9ac58bb2f8c886	9a125d6e-ada3-449b-a651-9a88fe8b6264	nextflow run hello-modules.nf
+2024-08-09 13:23:51	-	big_becquerel	-	8c26d5cbddeb4739e9196d1906949370	c7ee9d44-0738-4c20-8ac3-01944655ed61	nextflow run hello-gatk.nf
+2024-08-09 13:27:44	-	cheeky_wozniak	-	334405b3fc4e7f873f8d80cd64e5e41c	7bf13bd5-33e4-4f55-be5f-60a86755d83a	nextflow run hello-gatk.nf
+2024-08-09 13:28:25	-	backstabbing_lattes	-	ef564193f7d9ae7389163be0d67ef6db	101b2528-aa52-4c74-8e9f-e185d5fe9a84	nextflow run hello-gatk.nf
+2024-08-09 13:31:55	-	stupefied_panini	-	ef564193f7d9ae7389163be0d67ef6db	26482d03-532b-45b9-8c3f-2ca41ae93aa6	nextflow run hello-gatk.nf
+2024-08-09 13:35:27	-	distracted_snyder	-	ef564193f7d9ae7389163be0d67ef6db	f40ab884-084a-48fd-aa9b-185168d21d86	nextflow run hello-gatk.nf
+2024-08-09 13:39:48	-	furious_lumiere	-	ef564193f7d9ae7389163be0d67ef6db	1d53094a-5859-413b-8c63-a7743374b846	nextflow run hello-gatk.nf
+2024-08-09 13:42:05	-	distracted_elion	-	ef564193f7d9ae7389163be0d67ef6db	cab2f49d-b899-43a3-9860-1d6cff2887b8	nextflow run hello-gatk.nf
+2024-08-09 13:42:58	17.2s	peaceful_gates	ERR	91c9f94bd3c1e5e0fd0adc12677f0556	77acddd8-e861-4269-a64a-514cc4a0e2b2	nextflow run hello-gatk.nf
+2024-08-09 13:44:55	6.6s	elated_faggin	ERR	91c9f94bd3c1e5e0fd0adc12677f0556	99910a0f-8a06-4fa6-914e-6030154b0215	nextflow run hello-gatk.nf
+2024-08-09 13:49:04	7.1s	infallible_miescher	ERR	91c9f94bd3c1e5e0fd0adc12677f0556	4d588664-72b0-4412-9b4d-c327f4a062fd	nextflow run hello-gatk.nf
+2024-08-09 13:54:12	2m 1s	zen_kirch	ERR	91c9f94bd3c1e5e0fd0adc12677f0556	554434ed-4e03-4a47-b059-dc7586bffba8	nextflow run hello-gatk.nf
+2024-08-09 14:06:10	11m 36s	extravagant_saha	ERR	91c9f94bd3c1e5e0fd0adc12677f0556	6b4193be-3372-4f3c-9624-2c8bcefb6bfc	nextflow run hello-gatk.nf
+2024-08-11 20:31:24	3.7s	shrivelled_fourier	ERR	b7d2052a872afb01e78915d4f6ae6441	18918307-c026-4f04-943d-a85b5416c14d	nextflow run hello-modules.nf
+2024-08-11 20:34:38	38.7s	fervent_lamarck	OK	b7d2052a872afb01e78915d4f6ae6441	4a991240-c3b0-4aac-9e81-e6521f74749b	nextflow run /homes/mkumar/practice/hello-nextflow/hello-modules.nf
+2024-08-11 20:53:29	-	lonely_stonebraker	-	b562922dc74637c3595f24f2ea0bcb6a	4220d95a-e90c-4570-a697-c3bc421bd4f5	nextflow run hello-nf-test.nf
+2024-08-11 20:54:10	-	thirsty_tuckerman	-	b562922dc74637c3595f24f2ea0bcb6a	056d8c67-a452-4891-87f9-cad9f9ebdbfa	nextflow run /homes/mkumar/practice/hello-nextflow/hello-nf-test.nf
+2024-08-11 20:56:21	32.4s	berserk_curry	OK	f9cb0a189b85c4296f33c0b0232dbf18	87afaa77-da22-453d-98f5-6ad04f23c188	nextflow run /homes/mkumar/practice/hello-nextflow/hello-nf-test.nf

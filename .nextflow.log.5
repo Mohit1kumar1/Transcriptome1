@@ -1,0 +1,87 @@
+Sep-10 05:42:55.887 [main] DEBUG nextflow.cli.Launcher - $> nextflow run /homes/mkumar/practice/Operators/allcombine.nf
+Sep-10 05:42:56.623 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Sep-10 05:42:56.660 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/homes/mkumar/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Sep-10 05:42:56.687 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-10 05:42:56.690 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-10 05:42:56.697 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-10 05:42:56.723 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-10 05:42:56.769 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /homes/mkumar/practice/nextflow.config
+Sep-10 05:42:56.775 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /homes/mkumar/practice/nextflow.config
+Sep-10 05:42:56.837 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /homes/mkumar/.nextflow/secrets/store.json
+Sep-10 05:42:56.844 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4fe01803] - activable => nextflow.secret.LocalSecretsProvider@4fe01803
+Sep-10 05:42:56.857 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Sep-10 05:42:58.034 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Sep-10 05:42:58.068 [main] DEBUG nextflow.cli.CmdRun - Launching `/homes/mkumar/practice/Operators/allcombine.nf` [curious_roentgen] DSL2 - revision: f8eb74823c
+Sep-10 05:42:58.071 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-10 05:42:58.072 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-10 05:42:58.184 [main] DEBUG nextflow.Session - Session UUID: 929336f8-e681-4596-81dd-8e35b7667248
+Sep-10 05:42:58.185 [main] DEBUG nextflow.Session - Run name: curious_roentgen
+Sep-10 05:42:58.187 [main] DEBUG nextflow.Session - Executor pool size: 8
+Sep-10 05:42:58.209 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-10 05:42:58.221 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-10 05:42:58.266 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (09:05 CEST)
+  System: Linux 5.15.0-101-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.24+8-post-Ubuntu-1ubuntu320.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2210308@lummerland [134.176.31.195]
+  CPUs: 8 - Mem: 15.6 GB (499.5 MB) - Swap: 7.4 GB (6.5 GB)
+Sep-10 05:42:58.330 [main] DEBUG nextflow.Session - Work-dir: /homes/mkumar/practice/work [nfs]
+Sep-10 05:42:58.331 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /homes/mkumar/practice/Operators/bin
+Sep-10 05:42:58.359 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-10 05:42:58.387 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-10 05:42:58.462 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-10 05:42:58.490 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Sep-10 05:42:58.736 [main] DEBUG nextflow.Session - Session start
+Sep-10 05:42:59.310 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-10 05:42:59.766 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-10 05:42:59.767 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-10 05:42:59.781 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-10 05:42:59.792 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Sep-10 05:42:59.798 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sep-10 05:42:59.957 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: LOG_FILES_SUMMARY, PROCESS_LOG_FILES
+Sep-10 05:42:59.974 [main] WARN  nextflow.Session - There's no process matching config selector: SAMTOOLS_VIEW
+Sep-10 05:42:59.978 [main] DEBUG nextflow.Session - Igniting dataflow network (9)
+Sep-10 05:43:00.031 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > LOG_FILES_SUMMARY
+Sep-10 05:43:00.036 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_a0d4d817a630332e: /homes/mkumar/practice/Operators/allcombine.nf
+  Script_4ffc13eed1215745: /homes/mkumar/practice/Operators/./combine.nf
+Sep-10 05:43:00.037 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-10 05:43:00.038 [main] DEBUG nextflow.Session - Session await
+Sep-10 05:43:00.589 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-10 05:43:00.596 [Task submitter] INFO  nextflow.Session - [23/370888] Submitted process > LOG_FILES_SUMMARY (1)
+Sep-10 05:43:01.212 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: LOG_FILES_SUMMARY (1); status: COMPLETED; exit: 0; error: -; workDir: /homes/mkumar/practice/work/23/370888ef1aa4e55a1fd3f1861c2b66]
+Sep-10 05:43:01.216 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-10 05:43:01.252 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Process `LOG_FILES_SUMMARY (1)` is unable to find [UnixPath]: `/homes/mkumar/practice/work/23/370888ef1aa4e55a1fd3f1861c2b66/summary_log.txt` (pattern: `summary_log.txt`)
+Sep-10 05:43:01.266 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=LOG_FILES_SUMMARY (1); work-dir=/homes/mkumar/practice/work/23/370888ef1aa4e55a1fd3f1861c2b66
+  error [nextflow.exception.MissingFileException]: Missing output file(s) `summary_log.txt` expected by process `LOG_FILES_SUMMARY (1)`
+Sep-10 05:43:01.348 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'LOG_FILES_SUMMARY (1)'
+
+Caused by:
+  Missing output file(s) `summary_log.txt` expected by process `LOG_FILES_SUMMARY (1)`
+
+
+Command executed:
+
+  Rscript /homes/mkumar/practice/src/summary.r startvalue.rds bowtiedict.txt.rds bowtiedict.txt_chm.rds output1234.txt.rds output1234.txt_chm.rds VG.txt.rds VG.txt_chm.rds sortmerna.txt.rds summary_log.txt
+
+Command exit status:
+  0
+
+Command output:
+  (empty)
+
+Work dir:
+  /homes/mkumar/practice/work/23/370888ef1aa4e55a1fd3f1861c2b66
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Sep-10 05:43:01.369 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-10 05:43:01.379 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Missing output file(s) `summary_log.txt` expected by process `LOG_FILES_SUMMARY (1)`
+Sep-10 05:43:01.403 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sep-10 05:43:01.404 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-10 05:43:01.421 [TaskFinalizer-1] WARN  nextflow.util.SimpleAgent - Got an interrupted exception while taking agent result | java.lang.InterruptedException
+Sep-10 05:43:01.436 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=559ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Sep-10 05:43:01.630 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-10 05:43:01.782 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

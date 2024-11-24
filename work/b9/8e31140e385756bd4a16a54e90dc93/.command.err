@@ -1,0 +1,3 @@
+Error in writeLines(sapply(names(results), function(name) { : 
+  can only write character objects
+Execution halted

@@ -1,0 +1,28 @@
+Installing package into ‘/homes/mkumar/R/x86_64-pc-linux-gnu-library/3.6’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/ggplot2_3.5.1.tar.gz'
+Content type 'application/x-gzip' length 3604371 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+* installing *source* package ‘ggplot2’ ...
+** package ‘ggplot2’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggplot2)
+
+The downloaded source packages are in
+	‘/tmp/RtmpRlNgbi/downloaded_packages’
+Saving 7 x 7 in image

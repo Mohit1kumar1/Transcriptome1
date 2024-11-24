@@ -1,0 +1,127 @@
+Aug-09 14:06:09.095 [main] DEBUG nextflow.cli.Launcher - $> nextflow run hello-gatk.nf
+Aug-09 14:06:09.307 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Aug-09 14:06:09.335 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/homes/mkumar/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Aug-09 14:06:09.356 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-09 14:06:09.358 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-09 14:06:09.363 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Aug-09 14:06:09.383 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-09 14:06:09.430 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /homes/mkumar/practice/hello-nextflow/nextflow.config
+Aug-09 14:06:09.436 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /homes/mkumar/practice/hello-nextflow/nextflow.config
+Aug-09 14:06:09.510 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /homes/mkumar/.nextflow/secrets/store.json
+Aug-09 14:06:09.516 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1a411233] - activable => nextflow.secret.LocalSecretsProvider@1a411233
+Aug-09 14:06:09.528 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Aug-09 14:06:10.290 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Aug-09 14:06:10.316 [main] DEBUG nextflow.cli.CmdRun - Launching `hello-gatk.nf` [extravagant_saha] DSL2 - revision: 91c9f94bd3
+Aug-09 14:06:10.319 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-09 14:06:10.320 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-09 14:06:10.399 [main] DEBUG nextflow.Session - Session UUID: 6b4193be-3372-4f3c-9624-2c8bcefb6bfc
+Aug-09 14:06:10.400 [main] DEBUG nextflow.Session - Run name: extravagant_saha
+Aug-09 14:06:10.401 [main] DEBUG nextflow.Session - Executor pool size: 8
+Aug-09 14:06:10.414 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-09 14:06:10.423 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-09 14:06:10.456 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC (09:05 CEST)
+  System: Linux 5.15.0-113-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.24+8-post-Ubuntu-1ubuntu320.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 2319950@algbi-stud-pc04 [127.0.1.1]
+  CPUs: 8 - Mem: 15.5 GB (1.5 GB) - Swap: 2 GB (1.9 GB)
+Aug-09 14:06:10.504 [main] DEBUG nextflow.Session - Work-dir: /homes/mkumar/practice/hello-nextflow/work [nfs]
+Aug-09 14:06:10.506 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /homes/mkumar/practice/hello-nextflow/bin
+Aug-09 14:06:10.517 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-09 14:06:10.532 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-09 14:06:10.583 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-09 14:06:10.597 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Aug-09 14:06:10.745 [main] DEBUG nextflow.Session - Session start
+Aug-09 14:06:11.093 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-09 14:06:11.646 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-09 14:06:11.646 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-09 14:06:11.657 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-09 14:06:11.667 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=15.5 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Aug-09 14:06:11.672 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-09 14:06:11.801 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-09 14:06:11.801 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-09 14:06:11.875 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-09 14:06:11.876 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-09 14:06:11.892 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: GATK_JOINTGENOTYPING, GATK_HAPLOTYPECALLER, SAMTOOLS_INDEX
+Aug-09 14:06:11.893 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Aug-09 14:06:11.906 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SAMTOOLS_INDEX
+Aug-09 14:06:11.907 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GATK_HAPLOTYPECALLER
+Aug-09 14:06:11.908 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GATK_JOINTGENOTYPING
+Aug-09 14:06:11.914 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_76b7ef3cbaeeae52: /homes/mkumar/practice/modules/local/samtools/index/main.nf
+  Script_dbf0c086f956d611: /homes/mkumar/practice/modules/local/gatk/jointgenotyping/main.nf
+  Script_41aa3d4acf919b32: /homes/mkumar/practice/modules/local/gatk/haplotypecaller/main.nf
+  Script_6e1a8854a9bd86e1: /homes/mkumar/practice/hello-nextflow/hello-gatk.nf
+Aug-09 14:06:11.914 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-09 14:06:11.914 [main] DEBUG nextflow.Session - Session await
+Aug-09 14:06:12.316 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 14:06:12.319 [Task submitter] INFO  nextflow.Session - [2b/60ac7d] Submitted process > SAMTOOLS_INDEX (1)
+Aug-09 14:06:12.344 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 14:06:12.345 [Task submitter] INFO  nextflow.Session - [31/fb8d49] Submitted process > SAMTOOLS_INDEX (3)
+Aug-09 14:06:12.367 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 14:06:12.368 [Task submitter] INFO  nextflow.Session - [a3/6c8a9f] Submitted process > SAMTOOLS_INDEX (2)
+Aug-09 14:06:14.897 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: SAMTOOLS_INDEX (3); status: COMPLETED; exit: 0; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/31/fb8d493a79fedea058e2bd5eea94d1]
+Aug-09 14:06:14.898 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-09 14:06:15.006 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 14:06:15.008 [Task submitter] INFO  nextflow.Session - [d0/d7937e] Submitted process > GATK_HAPLOTYPECALLER (1)
+Aug-09 14:06:15.643 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SAMTOOLS_INDEX (1); status: COMPLETED; exit: 0; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/2b/60ac7dbbacfc327c615d755c9f6cd2]
+Aug-09 14:06:15.691 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 14:06:15.692 [Task submitter] INFO  nextflow.Session - [6e/bec7dc] Submitted process > GATK_HAPLOTYPECALLER (2)
+Aug-09 14:06:15.766 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: SAMTOOLS_INDEX (2); status: COMPLETED; exit: 0; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/a3/6c8a9ffe51a47f65a7b49d8d83e850]
+Aug-09 14:06:15.809 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 14:06:15.810 [Task submitter] INFO  nextflow.Session - [d5/620f26] Submitted process > GATK_HAPLOTYPECALLER (3)
+Aug-09 14:11:11.791 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 3 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: GATK_HAPLOTYPECALLER (1); status: RUNNING; exit: -; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/d0/d7937eb90015cc2eae663591237437]
+~> TaskHandler[id: 5; name: GATK_HAPLOTYPECALLER (2); status: RUNNING; exit: -; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/6e/bec7dc58aa49b1cc6be65d78dc8e0b]
+~> TaskHandler[id: 6; name: GATK_HAPLOTYPECALLER (3); status: RUNNING; exit: -; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/d5/620f26041802f15149565e339dbd3b]
+Aug-09 14:16:11.889 [Task monitor] DEBUG n.processor.TaskPollingMonitor - !! executor local > tasks to be completed: 3 -- submitted tasks are shown below
+~> TaskHandler[id: 4; name: GATK_HAPLOTYPECALLER (1); status: RUNNING; exit: -; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/d0/d7937eb90015cc2eae663591237437]
+~> TaskHandler[id: 5; name: GATK_HAPLOTYPECALLER (2); status: RUNNING; exit: -; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/6e/bec7dc58aa49b1cc6be65d78dc8e0b]
+~> TaskHandler[id: 6; name: GATK_HAPLOTYPECALLER (3); status: RUNNING; exit: -; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/d5/620f26041802f15149565e339dbd3b]
+Aug-09 14:17:42.332 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: GATK_HAPLOTYPECALLER (1); status: COMPLETED; exit: 0; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/d0/d7937eb90015cc2eae663591237437]
+Aug-09 14:17:43.628 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: GATK_HAPLOTYPECALLER (3); status: COMPLETED; exit: 0; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/d5/620f26041802f15149565e339dbd3b]
+Aug-09 14:17:43.633 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: GATK_HAPLOTYPECALLER (2); status: COMPLETED; exit: 0; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/6e/bec7dc58aa49b1cc6be65d78dc8e0b]
+Aug-09 14:17:43.687 [Actor Thread 4] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 3; slices: 1; internal sort time: 0.037 s; external sort time: 0.002 s; total time: 0.039 s
+Aug-09 14:17:43.746 [Actor Thread 4] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /homes/mkumar/practice/hello-nextflow/work/collect-file/ce747923ba13f10d2b1653b602672533
+Aug-09 14:17:43.773 [Actor Thread 4] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-1718252320646563521
+Aug-09 14:17:43.790 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-09 14:17:43.791 [Task submitter] INFO  nextflow.Session - [88/14180e] Submitted process > GATK_JOINTGENOTYPING (1)
+Aug-09 14:17:45.319 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: GATK_JOINTGENOTYPING (1); status: COMPLETED; exit: 127; error: -; workDir: /homes/mkumar/practice/hello-nextflow/work/88/14180e6d67e7908331cb0eab2bd002]
+Aug-09 14:17:45.327 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=GATK_JOINTGENOTYPING (1); work-dir=/homes/mkumar/practice/hello-nextflow/work/88/14180e6d67e7908331cb0eab2bd002
+  error [nextflow.exception.ProcessFailedException]: Process `GATK_JOINTGENOTYPING (1)` terminated with an error exit status (127)
+Aug-09 14:17:45.371 [TaskFinalizer-7] ERROR nextflow.processor.TaskProcessor - Error executing process > 'GATK_JOINTGENOTYPING (1)'
+
+Caused by:
+  Process `GATK_JOINTGENOTYPING (1)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  GATK GenomicsDBImport     --sample-name-map family_trio_map.tsv     --genomicsdb-workspace-path family_trio_gdb         -L intervals.list
+  
+  gatk GenotypeGVCFs         -R ref.fasta         -V gendb://family_trio_gdb         -O family_trio.joint.vcf         -L intervals.list
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: GATK: command not found
+
+Work dir:
+  /homes/mkumar/practice/hello-nextflow/work/88/14180e6d67e7908331cb0eab2bd002
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Aug-09 14:17:45.379 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-09 14:17:45.381 [TaskFinalizer-7] DEBUG nextflow.Session - Session aborted -- Cause: Process `GATK_JOINTGENOTYPING (1)` terminated with an error exit status (127)
+Aug-09 14:17:45.386 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-09 14:17:45.387 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-09 14:17:45.417 [TaskFinalizer-7] WARN  nextflow.util.SimpleAgent - Got an interrupted exception while taking agent result | java.lang.InterruptedException
+Aug-09 14:17:45.421 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=34m 32s; failedDuration=1.5s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Aug-09 14:17:45.601 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-09 14:17:45.642 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
