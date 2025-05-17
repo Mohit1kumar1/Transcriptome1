@@ -1,32 +1,57 @@
-<h1>Nextflow Pipeline for Visualization of Read Filtration</h1>
+# Nextflow Pipeline for Metatranscriptomic Data Processing
+This repository contains a modular Nextflow pipeline developed during my internship at the Department of Algorithmische Bioinformatik, JLU. The pipeline is designed for processing metatranscriptomic short read datasets from human-derived samples, enabling accurate microbial gene expression profiling in gut microbiome samples.
+##Disclaimer
+This is a simplified representation of the workflow which showcases my work on the actual workflow during my internship. The complete workflow is hosted in a private repository due to permission restrictions.
+## Overview
+This pipeline implements a progressive filtering approach for metatranscriptomic data processing:
 
-<p>This repository contains a Nextflow pipeline designed to visualize the filtration of reads using various bioinformatics tools such as <b>STAR</b>, <b>BOWTIE</b>, <b>VG</b>, <b>SORTMERNA</b>, and others.</p>
+Host Sequence Removal: Sequential filtering of human genomic, transcriptomic, and pangenomic sequences using multiple alignment tools:
 
-<h2>Disclaimer</h2>
-<p>This is a simplified representation of the workflow which showcases my work on actual workflow during my internship. The complete workflow is hosted in a private repository due to permission restrictions.</p>
+STAR: Alignment against reference genomes (GRCh38 and T2T-CHM13)
+Bowtie2: Additional host sequence filtering
+VG: Pangenomic sequence alignment
 
-<h2>Overview</h2>
-<ul>
-  <li><b>Modules:</b> Each bioinformatics tool had multiple processes (e.g., filtering, assigning) organized in modular scripts.</li>
-  <li><b>Subworkflows:</b> Processes for each tool were integrated into subworkflows for efficient execution and management.</li>
-  <li><b>Master Workflow:</b> Subworkflows for different tools were processed in a master workflow. Log files were generated simultaneously during execution, making it challenging to handle them individually.</li>
-</ul>
 
-<h2>Key Features</h2>
-<ul>
-  <li><b>Operators Folder:</b> Contains Nextflow scripts that:
-    <ul>
-      <li>Collect log files from each bioinformatics tool.</li>
-      <li>Filter and extract desired values.</li>
-      <li>Aggregate and process logs into a cohesive format.</li>
-    </ul>
-  </li>
-  <li><b>Simplified Structure:</b> Highlights core ideas without the complexity of the original workflow.</li>
-</ul>
+rRNA Depletion: Using SortMeRNA to remove ribosomal RNA sequences
+Read Repair: Final step to restore paired-end structure ensuring data integrity
+Quality Assessment: Integration of FASTQC and MultiQC for comprehensive quality control
+Visualization: Custom R scripts for aggregating and visualizing filtering metrics
 
-<h2>Usage</h2>
-<p>This repository can serve as:</p>
-<ul>
-  <li>A learning resource for managing and processing log files in bioinformatics workflows.</li>
-  <li>A foundation for developing workflows for similar bioinformatics projects.</li>
-</ul>
+This systematic approach produces high-quality microbial RNA datasets specifically designed for downstream taxonomic profiling and functional analysis.
+Pipeline Architecture
+
+Modules: Each bioinformatics tool (STAR, Bowtie2, VG, SortMeRNA) is implemented as separate modular scripts with multiple processes (e.g., alignment, filtering, metrics collection)
+Subworkflows: Tool-specific processes are integrated into subworkflows for efficient execution and management
+Master Workflow: Coordinates all subworkflows with proper dependencies and data flow
+Configuration System: Supports nf-core igenomes with predefined references while accommodating custom references through configurable parameters
+
+## Key Features
+
+Operators Folder: Contains Nextflow scripts that:
+
+Collect log files from each bioinformatics tool
+Filter and extract relevant metrics
+Aggregate and process logs into a cohesive format for visualization
+Generate comprehensive filtering reports
+
+
+Containerization: Complete workflow containerized using:
+
+Singularity for HPC deployment
+Docker with versioned containers tagged and deployed via GitHub
+
+
+HPC Integration: Optimized for SLURM-managed high-performance computing environments
+Data Management:
+
+Secure remote access and data transfer via SSH
+Structured output organization for downstream analysis
+
+
+## Technical Competencies Demonstrated
+
+NGS file format handling (FASTQ, BAM, GTF, BED)
+Pipeline optimization techniques
+Privacy-aware bioinformatics practices for human-derived samples
+Data visualization and quality assessment
+Workflow containerization and reproducibility
